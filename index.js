@@ -9,4 +9,8 @@ routerppcos.get('/memoPenjualan/Search_MP/id',memoPenjualanController.memoPenjua
 module.exports = routerppcos
 
 
- 
+ //Memo Pembelian
+routerppcos.get('/memoPenjualan/Search_001/id',memoPenjualanController.memoPenjualanControllerSearch_001)
+routerppcos.get('/memoPenjualan/Search_002/id',memoPenjualanController.memoPenjualanControllerSearch_002)
+routerppcos.get('/memoPenjualan/Search_MP/id',memoPenjualanController.memoPenjualanControllerSearch_MP)
+module.exports = routerppcos
