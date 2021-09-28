@@ -1,8 +1,12 @@
-//load config
+const express = require('express')
+const routerppcos = new express.Router()
+const memoPenjualanController = require('../../../../src/controller/Logistic/ppcos/memoPenjualanController')
 
-// rename this file into 'index.js'
+//Memo Penjualan
+routerppcos.get('/memoPenjualan/Search_001/id',memoPenjualanController.memoPenjualanControllerSearch_001)
+routerppcos.get('/memoPenjualan/Search_002/id',memoPenjualanController.memoPenjualanControllerSearch_002)
+routerppcos.get('/memoPenjualan/Search_MP/id',memoPenjualanController.memoPenjualanControllerSearch_MP)
+module.exports = routerppcos
 
-var env = process.env.NODE_ENV || 'development'
-var config = require('./config')[env]
 
-module.exports = config
+ 
