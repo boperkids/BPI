@@ -1,0 +1,63 @@
+{
+    "development": {
+      "model":{
+        "Database1": {
+          "username": "root",
+          "password": "",
+          "database": "bpi_rsapi",
+          "host": "10.12.12.6",
+          "dialect": "mysql",
+          "logging": false
+        },
+        "Database2": {
+          "username": "kike",
+          "password": "Qwewer12345!@",
+          "database": "BPI",
+          "host": "10.12.12.245",
+          "dialect": "mssql",
+          "logging": false,
+          "options": {
+    
+            "enableArithAbort": true
+    
+            }
+        }
+      },
+      "hardware_api_port": "8000",
+      "websocket_port": "6001",
+      "mqtt_host": "192.168.1.250",
+      "mqtt_port": "1883"
+    },
+    "test": {
+      "username": "root",
+      "password": null,
+      "database": "database_test",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    "production": {
+      "model":{
+        "Database1": {
+          "username": "ravelware",
+          "password": "R4v3lw4r3",
+          "database": "erp_ravelware",
+          "host": "127.0.0.1",
+          "dialect": "mysql",
+          "logging": false
+        },
+        "Database2": {
+          "username": "ravelware",
+          "password": "R4v3lw4r3",
+          "database": "landing_page",
+          "host": "127.0.0.1",
+          "dialect": "mysql",
+          "logging": false
+        }
+      },
+      "mqtt_host": "10.146.1.217",
+      "mqtt_port": "1883",
+      "hardware_api_port": "9175",
+      "websocket_port": "6001"
+  }
+}
+  
